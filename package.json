@@ -1,0 +1,27 @@
+{
+  "name": "wow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "node index.js"
+  },
+  "repository": {},
+  "author": "Vlad Khitev <vkhitev@gmail.com> (https://vk.com/id18315550)",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "moment": "^2.17.1",
+    "ramda": "^0.23.0",
+    "request": "^2.79.0",
+    "standard": "^8.6.0",
+    "webpack": "2.2.0"
+  }
+}
