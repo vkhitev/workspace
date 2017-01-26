@@ -20,14 +20,15 @@ function objToQueryString (obj) {
   )).join('&')
 }
 
-function constructURL (base, path, query = '') {
+function constructURL (base, path, query) {
+  let stringQuery = null
   if (query) {
     if (typeof query !== 'object') {
       throw new Error('Query must be an object: ' + query)
     }
-    query = objToQueryString(query)
+    stringQuery = objToQueryString(query)
   }
-  return encodeURI([base, path, query].join('/').replace(/([^:]\/)\/+/g, '$1'))
+  return encodeURI([base, path, stringQuery].join('/').replace(/([^:]\/)\/+/g, '$1'))
 }
 
 function getSchedule (path, query) {
